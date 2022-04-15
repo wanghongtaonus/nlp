@@ -1,0 +1,114 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: comment_to_code
+  examples: |
+    - delete everything in a different named graph context .
+- intent: code_to_comment
+  examples: |
+    - public synchronized void info ( string msg ) { log record record = new log record ( level . info , msg ) ; log ( record ) ; }
+    - code to comment: public synchronized void info ( string msg ) { log record record = new log record ( level . info , msg ) ; log ( record ) ; }
+    - public void ('i am a boy')
+- intent: name_create
+  examples: |
+    - private void FUNC_0 ( final callbackcontext VAR_0 ) { final VAR_1 VAR_1 = cordova . getactivity ( ) ; final map < string , object > VAR_2 = new hashmap < string , object > ( ) ; VAR_2 . put ( str_ , plugininternalprefs . getcurrentreleaseversionname ( ) ) ; VAR_2 . put ( str_ , plugininternalprefs . getreadyforinstallationreleaseversionname ( ) ) ; VAR_2 . put ( str_ , plugininternalprefs . getpreviousreleaseversionname ( ) ) ; VAR_2 . put ( str_ , versionhelper . applicationversionname ( VAR_1 ) ) ; VAR_2 . put ( str_ , versionhelper . applicationversioncode ( VAR_1 ) ) ; final VAR_3 VAR_3 = pluginresulthelper . createpluginresult ( null , VAR_2 , null ) ; VAR_0 . sendpluginresult ( VAR_3 ) ; } get information about app and web versions .
+    - name_create: private void FUNC_0 ( final callbackcontext VAR_0 ) { final VAR_1 VAR_1 = cordova . getactivity ( ) ; final map < string , object > VAR_2 = new hashmap < string , object > ( ) ; VAR_2 . put ( str_ , plugininternalprefs . getcurrentreleaseversionname ( ) ) ; VAR_2 . put ( str_ , plugininternalprefs . getreadyforinstallationreleaseversionname ( ) ) ; VAR_2 . put ( str_ , plugininternalprefs . getpreviousreleaseversionname ( ) ) ; VAR_2 . put ( str_ , versionhelper . applicationversionname ( VAR_1 ) ) ; VAR_2 . put ( str_ , versionhelper . applicationversioncode ( VAR_1 ) ) ; final VAR_3 VAR_3 = pluginresulthelper . createpluginresult ( null , VAR_2 , null ) ; VAR_0 . sendpluginresult ( VAR_3 ) ; } get information about app and web versions .
+- intent: choose_code_to_comment
+  examples: |
+    - code to comment
+    - 1. code to comment
+    - I choose code to comment
+- intent: choose_name_create
+  examples: |
+    - help create the function name
+    - 3. help create the function name
+    - 3.
+    - 3
+- intent: choose_comment_to_code
+  examples: |
+    - 2. comment to code
+    - comment to code
+    - 2.
+    - 2
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
