@@ -1,0 +1,121 @@
+version: "2.0"
+
+stories:
+
+
+- story: code path1
+  steps:
+  - intent: code_to_comment
+  - action: action_code_to_comment
+
+- story: code path2
+  steps:
+  - intent: comment_to_code
+  - action: action_comment_to_code
+
+- story: code path3
+  steps:
+  - intent: name_create
+  - action: action_name_create
+
+
+- story: code path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: choose_code_to_comment
+  - action: utter_choose_code_to_comment
+  - intent: code_to_comment
+  - action: action_code_to_comment
+
+- story: comment path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: choose_comment_to_code
+  - action: utter_choose_comment_to_code
+  - intent: comment_to_code
+  - action: action_comment_to_code
+
+- story: create path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: choose_name_create
+  - action: utter_choose_name_create
+  - intent: name_create
+  - action: action_name_create
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+# - story: happy path1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: news_checker_germany
+#   - action: action_hello_germany
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+# - story: Crypto-path1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: crypto_section
+#   - action: action_crypto_section
+  
+
+# version: "2.0"
+
+# stories:
+
+# - story: happy path
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_great
+#   - action: utter_happy
+
+# - story: sad path 1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: affirm
+#   - action: utter_happy
+
+# - story: sad path 2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: deny
+#   - action: utter_goodbye
